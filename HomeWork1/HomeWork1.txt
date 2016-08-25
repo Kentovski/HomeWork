@@ -1,0 +1,47 @@
+Javascript
+
+1.
+
+123 == '123'		// true
+123 === '123'		// false
+'' == false		// true
+'' === false		// false
+'00000' == false	// true
+'0000' === false	// false
+
+2.
+
+1 + '12'	// 112
+1 - '12'	// -11
+1 + 'abv'	// 1abv
+1 - 'abv'	// NaN
+
+3.
+
+(function (undefined) {
+	undefined == null;
+	undefined === null;
+	undefined = '1';
+	console.log(undefined);
+})(); //1
+
+
+
+4.
+
+function x() {
+	var funcs = [];
+	for (var i = 0; i < 10; i ++) {
+		funcs.push(function() { console.log(i); });
+	}
+	return funcs;
+}
+var counters = x();
+counters[0]();		//10
+counters[3]();		//10
+
+MySQL
+
+1.
+2.
+3.
